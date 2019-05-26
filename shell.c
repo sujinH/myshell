@@ -63,8 +63,8 @@ int main(void)
       
 	    p =strtok(command, " ;"); 
 	
-	    while(p){ //a부터 c까지 실행 
- 		printf("[%s]\n", p); // 실행되고 있는 인덱스 출력 
+	    while(p){ 
+ 		printf("[%s]\n", p); 
          	pid = fork(); 
          	if (pid < 0) { 
              		fprintf(stderr, "fork failed\n"); 
